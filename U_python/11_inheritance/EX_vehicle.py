@@ -49,19 +49,19 @@ class Bike(Vehicle):
 class Car(Vehicle):
     def __init__(self, color = '', wheels = 0, velocity = 0) -> None:
         super().__init__(color, wheels)
-        self._velocity = velocity
+        self.__velocity = velocity
 
     @property
     def velocity(self):
-        return self._velocity
+        return self.__velocity
 
     @velocity.setter
     def velocity(self, velocity):
-        self._velocity = velocity
+        self.__velocity = velocity
 
     # Overriding the __str__ method of Vehicle.
     def __str__(self):
-        return f'{super().__str__()}, Velocity: {self._velocity} Km/h'
+        return f'{super().__str__()}, Velocity: {self.__velocity} Km/h'
 
 #-------------------------------------------------------------------
 
@@ -73,6 +73,9 @@ if __name__ == '__main__':
     print(f'\n\tBike 1-> {bike1}')
 
     car1 = Car('Yellow', 4, 45)
+    print(f'\n\tCar 1-> {car1}')
+    print(car1.velocity)
+    car1.velocity = 60
     print(f'\n\tCar 1-> {car1}')
 
 #-------------------------------------------------------------------

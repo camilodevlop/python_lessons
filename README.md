@@ -1,5 +1,5 @@
 # python_lessons
-This repository contains the solved exercises proposed in the python courses.
+This repository contains the solutions to the exercises proposed in the Python courses.
 
 - U_python: in this directory are available the codes of both the solved exercises proposed in the Udemy's course "Universidad Python con Frameworks", and other short projects. Some of these projects are described below.
 

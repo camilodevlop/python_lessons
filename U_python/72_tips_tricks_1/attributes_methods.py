@@ -4,7 +4,7 @@ from my_module import *
 class MyClass:
     def __init__(self) -> None:
         self.my_public_var = 10
-        self.my_private_var = 11
+        self._my_protected_var = 11
 
 #-------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ if __name__ == '__main__':
     print(f'Public var: {obj.my_public_var}')
 
     # We shouldn't access attributes or methods marked as private.
-    print(f'Private var: {obj.my_private_var}')
+    print(f'Private var: {obj._my_protected_var}')
 
     # Functions of the imported module.
     public_function()

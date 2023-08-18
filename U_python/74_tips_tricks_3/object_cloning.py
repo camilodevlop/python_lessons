@@ -47,3 +47,5 @@ print(f'List_c: {list_c}')
 print(f'List_d: {list_d}')
 
 #-------------------------------------------------------------------
+for lst in list_c:
+    print(lst)
